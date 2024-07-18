@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body{
+    background: #fef7db;
+    margin: 0;
+    font-family: Poppins, ariel, sans-serif;
+}
+
+nav{ /*pretend there's a favicon*/
+    padding: 3em 0em;
+    background: #778a3c;
+    text-align: right;
+}
+nav a{ /*wanted to change automatic blue color to something else */
+    font-size: 1.3em;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+nav a:hover{ /*wanted to change automatic blue color to something else */
+    color: #ebebeb;
+}
+span{
+    padding: 2em;
+}
+.mountain{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    position: absolute; /*first had it as position fixed. had scrolling issue obviously. changed to absolute so h1 and h2 can be shown.*/
+    width: 123%; /*wanted to sort of crop photo through css and not on my computer so the hills of the mountain centered the text. this had an issue I realized after several hours of coding where it would hang over past the nav. had to undo several hours of work.*/
+    margin-left: -23%;
+    height: 37em;
+    opacity: .9;
+
+}
+.home{
+    text-align: center;
+    margin-top: 3.2em;
+    color: white;
+    font-size: 1.8em;
+    position: relative; /*keeps the text on top of .mountain*/
+}
+.h2home{ /*this was something different that was cleaner after I made a bunch of changes from the .mountain position:absolute issue. I can't remember what is was so I'm keeping it how I had it 2 hours ago. at some point the h1 and h2 were in a seperate div called .title and it worked really well*/
+    text-align: center;
+    margin-top: -.9em;
+    font-size: .7em;
+}
+.homebox{ /*I think I was able to fix the flexbox to wrap but it took like an hour and then had to undo it...*/
+    margin-top:14.1em;
+    color: rgb(36, 36, 36);
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    justify-content: center;
+}
+h3{
+    flex: 1 1 100%;
+    /* margin-bottom: -.1em; */
+}
+.destinations{
+    width: 100%;
+}
+.click1.color figcaption{ /*CSS TRIGGER*/
+    color: #778a3c;
+    font-weight: 700;
+}
+.click2.color figcaption { /*CSS TRIGGER*/
+    color: #778a3c;
+    font-weight: 700;
+}
+.click3.color figcaption { /*CSS TRIGGER*/
+    color: #778a3c;
+    font-weight: 700;
+}
+.click4.color figcaption { /*CSS TRIGGER*/
+    color: #778a3c;
+    font-weight: 700;
+}
+.click5.color figcaption { /*CSS TRIGGER*/
+    color: #778a3c;
+    font-weight: 700;
+}
+.click6.color figcaption { /*CSS TRIGGER*/
+    color: #778a3c;
+    font-weight: 700;
+}
+
+figure {
+    width: 15em;
+    font-size: .75em;
+}
+.welcome{
+    padding: 1.5em;
+    background: rgb(226, 226, 226);
+    color: black;
+    text-align: center;
+}
+.about{
+    padding: 1.5em;
+    color: black;
+    text-align: center;
+}
+footer{
+    background: #778a3c;
+    text-align: right;
+    margin-right: 1em;
+    padding: 1em 0em;
+    font-size: 16px;
+    width: 100%;
+    color: white;
+}
+
+/*gear page*/
+.gear{
+    width: 50em;
+    margin: auto;
+    margin-top: 3em;
+}
+.gear a{
+    color:#657534;
+    font-weight: 700;
+    text-decoration: none;
+}
+.backpack{
+    width: 20em;
+    border-radius: .8em;
+}
+
+.gear h2:nth-of-type(1) { /*cant' remember if we did nth in this class but I learned it in uxd270*/
+    margin-top: 1.3em;
+}
+.gear h2{
+    margin-top: 2em;
+}
+.gear.contact{
+    color: white;
+}
+.checkbox{
+    text-align: center;
+    width: 40em;
+    background-color: rgb(226, 226, 226);
+    margin: auto;
+    gap: 1em;
+    margin: 1em auto;
+    padding: 1em;
+    border-radius: .5em;
+    outline: solid #434e23 .1em;
+}
+
+/*group trip*/
+/*renamed and condensed 3a-countdown css*/
+.count {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+.year {
+    display:none;
+}
+.counth1{
+    font-size: 3em;
+}
+
+.time {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5em;
+    font-size: 1em;
+}
+
+.time h2{
+    margin: 0 0 5px;
+    
+}
+.tour{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    background-color: rgb(226, 226, 226);
+}
+
+ul{
+    list-style-type: none;
+}
+.tour h2{
+    display:flex;
+    flex-wrap: wrap;
+    flex: 1 1 20%;
+    justify-content: center;
+    margin: 2em;
+    margin-top: 3em;
+    background-color: #657534;
+    padding: .5em;
+    border-radius: .25em;
+    color: white;
+    border:#434e23 .13em solid;
+}
+.turtle{
+    display:flex;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    width:30em;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 2.3em;
+    border-radius: 3em;
+}
+
+/*contact page*/
+/*conceptualized and changed from my project3 contact page*/
+.contact{
+    text-align: center;
+    background-color: rgb(226, 226, 226);
+    margin: auto;
+    width: 80em;
+    gap: 1em;
+    margin: 1em auto;
+    padding: 1em;
+    border-radius: .5em;
+}
+.contactform{
+    outline: solid #434e23 .1em;
+    padding: 3em;
+    margin: 2em auto;
+    border-radius: .5em;
+    background-color: #ebebeb;
+    width: 20em;
+
+}
+.contact {
+    width: 50%;
+    font-size: 1em;
+    padding: .7em;
+    border: .0625em solid #ccc;
+    border-radius: .25em;
+    outline: solid #434e23 .1em;
+} 
+.submit{ 
+    display: flex;
+    margin: 2.5em auto;
+    text-align: center;
+    font-size: 1em;
+    background-color: #434e23;
+    color: white;
+    border: 1px solid #2b3216;
+    border-radius: .25em;
+    padding: .7em 1.3em;
+    cursor: pointer;
+    outline: solid rgb(245, 226, 203) .05em;
+}
+
