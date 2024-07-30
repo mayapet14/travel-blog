@@ -4,54 +4,160 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>South America</title>
+    <title>Europe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
-    <nav>
-        <span>
-            <a href="index.html">Home</a>
-        </span>
-        <span>
-            <a href="southamerica.html">South America</a>
-        </span>
-        <span>
-            <a href="europe.html">Europe</a>
-        </span>
-        <span>
-            <a href="gear.html">Gear</a>
-        </span>
-        <span>
-            <a href="grouptrip.html">Group Trip</a>
-        </span>
-        <span>
-            <a href="contact.html">Contact</a>
-        </span>
-    </nav>
-    <div class="gear">
-        <h1>European Destinations</h1>
-        <h2>France</h2>
-            <img class="backpack" src="images/france.jpg" alt="france">
-            <h3>Paris</h3>
-                <p>Known as the "City of Love" and the "Fashion Capital of the World", Paris is a destination for all. Visit landmarks such as the Eiffel Tower and the Notre-Dame Cathedral. Explore cute cafes, bakeries, and markets where you can enjoy macarons and fresh baguettes. Last but not least, spend a day wandering the world-class Louvre Museum.</p>
-            <h3>Nice</h3>
-                <p>Tucked away along the French Riviera, Nice is a lovely blend of nature and culture. Walk along pebbled beaches and blue waters. The city is very charming and quaint, lined with colorful buildings. Don't forget to visit the Musee Matisse!</p>
-        <h2>Spain</h2>
-            <img class="backpack" src="images/spain.jpg" alt="spain">
-            <h3>Barcelona</h3>
-                <p>Home of legendary architect Antoni Gaudi, get prepared to be transported to the vibrant city of Barcelona. Visit the Sagrada Familia which has been under contruction for nearly a decade. Explore the Gothic Quarter and stroll the beaches. Enjoy true Mediterranean culture in Barcelona.</p>
-            <h3>Ibiza</h3>
-                <p>Famous for its legendary nightlife, Ibiza is located of the East coast of Spain, in the Mediterranean sea. However, the archipelago offers more than just nightlife. Go snorkling, swimming, or experience UNESCO world heritage site Dalt Vila</p>
-        <h2>Germany</h2>
-        <img class="backpack" src="images/germany.jpg" alt="germany">
-            <h3>Berlin</h3>
-                <p>The capital of Germany, Berlin offers everything from history, to art, to nightlife. Historical sites include Checkpoint Charlie, the Holocaust Memorial, and fragments of the Berlin wall. They even have an entire island dedicated to Museums- Museum Island. And my personal favorite, the robust EDM scene.</p>
-            <h3>Munich</h3>
-                <p>Known primarily for Oktoberfest which is filled with beer gardens and festivities. One of the oldest beer halls in the world is located here, called Hofbrauhaus. World class museums include the Deutsches Museum and the Pinakothek art galleries. Munich is a charming city that leaves you wanting to return for more.</p>
+    <header class="bg-slate-100">
+        <nav class="mx-auto flex items-center justify-between px-6 py-10" aria-label="Global">
+            <a href="index.html" class="-m-1.5 p-1.5">
+            <span class="font-extrabold text-3xl text-slate-800">Travel Bag</span>
+          </a>
+          <div class="gap-x-12 text-slate-800 text-md sm:space-x-6 lg:flex">
+            <a href="southamerica.html" class="font-semibold leading-6">South America</a>
+            <a href="europe.html" class="font-semibold leading-6">Europe</a>
+            <a href="gear.html" class="font-semibold leading-6">Gear</a>
+            <a href="contact.html" class="font-semibold leading-6">Contact</a>
+          </div>
+        </nav>
+      </header>
+
+
+      <!-- image 1 -->
+
+<div class="bg-slate-200 py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+            <div class="order-2 lg:order-1">
+                <div class="text-base leading-7 text-gray-700 lg:max-w-lg">
+                    <h1 class="text-3xl font-bold tracking-tight sm:text-4xl pb-6">France</h1>
+                    <hr class="border-2 border-gray-300 my-4">
+                    <div class="max-w-xl">
+                        <p class="mt-8 font-bold">Paris</p>
+              <p class="mt-4">Known as the "City of Love" and the "Fashion Capital of the World", Paris is a destination for all. Visit landmarks such as the Eiffel Tower and the Notre-Dame Cathedral. Explore cute cafes, bakeries, and markets where you can enjoy macarons and fresh baguettes. Last but not least, spend a day wandering the world-class Louvre Museum.
+              </p>
+              <p class="mt-4 font-bold">Nice
+            </p>
+              <p class="mt-4">Tucked away along the French Riviera, Nice is a lovely blend of nature and culture. Walk along pebbled beaches and blue waters. The city is very charming and quaint, lined with colorful buildings. Don't forget to visit the Musee Matisse!
+
+              </p>
+                    </div>
+                </div>
+            </div>
+            <div class="order-1 lg:order-2 lg:pl-4">
+                <div class="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
+                    <img class="absolute inset-0 h-full w-full object-cover" src="images/eiffel.jpg" alt="">
+                    <div class="absolute left-1/2 top-1/2 -ml-16 -translate-x-1/2 -translate-y-1/2" aria-hidden="true"></div>
+                    <figure class="relative isolate text-transparent">
+                        <blockquote class="mt-6 text-xl font-semibold leading-8">
+                            <p>“Amet amet eget scelerisque tellus sit neque faucibus non eleifend. Integer eu praesent at a. Ornare arcu gravida natoque erat et cursus tortor.”</p>
+                        </blockquote>
+                        <figcaption class="mt-6 text-sm leading-6"><strong class="font-semibold">Judith Rogers,</strong> CEO at Workcation</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
     </div>
-    <footer>
-        <span>travelbag@travelbag.com</span><span>123-456-7890</span><span>Travel Bag Inc.</span>
-    </footer>
+</div>
+
+<!-- image 2 -->
+
+<div class="bg-slate-600 py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+        <div class="lg:pr-4">
+          <div class="relative overflow-hidden rounded-3xl px-6 pb-9 pt-64 sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
+            <img class="absolute inset-0 h-full w-full object-cover" src="images/barcelona.jpg" alt="">
+            <div class="absolute left-1/2 top-1/2 -ml-16 -translate-x-1/2 -translate-y-1/2" aria-hidden="true">
+              
+            </div>
+            <figure class="relative isolate text-transparent">
+              <blockquote class="mt-6 text-xl font-semibold leading-8">
+                <p>“Amet amet eget scelerisque tellus sit neque faucibus non eleifend. Integer eu praesent at a. Ornare arcu gravida natoque erat et cursus tortor.”</p>
+              </blockquote>
+              <figcaption class="mt-6 text-sm leading-6"><strong class="font-semibold">Judith Rogers,</strong> CEO at Workcation</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div>
+          <div class="text-base leading-7 text-slate-200 lg:max-w-lg">
+            <h1 class="text-3xl font-bold tracking-tight sm:text-4xl pb-6">Spain</h1>
+            <hr class="border-2 border-gray-800 my-4">
+
+            <div class="max-w-xl">
+                <p class="mt-8 font-bold">Barcelona</p>
+              <p class="mt-4">Home of legendary architect Antoni Gaudi, get prepared to be transported to the vibrant city of Barcelona. Visit the Sagrada Familia which has been under contruction for nearly a decade. Explore the Gothic Quarter and stroll the beaches. Enjoy true Mediterranean culture in Barcelona.</p>
+              <p class="mt-4 font-bold">Ibiza</p>
+              <p class="mt-4">Famous for its legendary nightlife, Ibiza is located of the East coast of Spain, in the Mediterranean sea. However, the archipelago offers more than just nightlife. Go snorkling, swimming, or experience UNESCO world heritage site Dalt Vila.</p>
+            </div>
+        </div> 
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- img 3 -->
+
+<div class="bg-slate-200 py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+            <div class="order-2 lg:order-1">
+                <div class="text-base leading-7 text-gray-700 lg:max-w-lg">
+                    <h1 class="text-3xl font-bold tracking-tight sm:text-4xl pb-6">Germany</h1>
+                    <hr class="border-2 border-gray-300 my-4">
+                    <div class="max-w-xl">
+                        <p class="mt-8 font-bold">Berlin</p>
+              <p class="mt-4">The capital of Germany, Berlin offers everything from history, to art, to nightlife. Historical sites include Checkpoint Charlie, the Holocaust Memorial, and fragments of the Berlin wall. They even have an entire island dedicated to Museums- Museum Island. And my personal favorite, the robust EDM scene.
+              </p>
+              <p class="mt-4 font-bold">Munich
+            </p>
+              <p class="mt-4">Known primarily for Oktoberfest which is filled with beer gardens and festivities. One of the oldest beer halls in the world is located here, called Hofbrauhaus. World class museums include the Deutsches Museum and the Pinakothek art galleries. Munich is a charming city that leaves you wanting to return for more.
+
+              </p>
+                    </div>
+                </div>
+            </div>
+            <div class="order-1 lg:order-2 lg:pl-4">
+                <div class="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
+                    <img class="absolute inset-0 h-full w-full object-cover" src="images/munich.jpg" alt="">
+                    <div class="absolute left-1/2 top-1/2 -ml-16 -translate-x-1/2 -translate-y-1/2" aria-hidden="true"></div>
+                    <figure class="relative isolate text-transparent">
+                        <blockquote class="mt-6 text-xl font-semibold leading-8">
+                            <p>“Amet amet eget scelerisque tellus sit neque faucibus non eleifend. Integer eu praesent at a. Ornare arcu gravida natoque erat et cursus tortor.”</p>
+                        </blockquote>
+                        <figcaption class="mt-6 text-sm leading-6"><strong class="font-semibold">Judith Rogers,</strong> CEO at Workcation</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+      
+      <!-- footer -->
+    <footer class="bg-slate-800">
+        <div class="mx-auto max-w-7xl overflow-hidden px-6 py-16 sm:py-16 lg:px-8">
+          <div class="flex justify-center space-x-10">
+            <a href="#" class="text-gray-400 hover:text-gray-300">
+              <span class="sr-only">Facebook</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-gray-300">
+              <span class="sr-only">Instagram</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            
+          </div>
+          <p class="mt-10 text-center text-xs leading-5 text-gray-300">&copy; Travel Bag. All rights reserved.</p>
+        </div>
+      </footer>
 </body>
 </html>

@@ -4,62 +4,107 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Europe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
-    <nav>
-        <span>
-            <a href="index.html">Home</a>
-        </span>
-        <span>
-            <a href="southamerica.html">South America</a>
-        </span>
-        <span>
-            <a href="europe.html">Europe</a>
-        </span>
-        <span>
-            <a href="gear.html">Gear</a>
-        </span>
-        <span>
-            <a href="grouptrip.html">Group Trip</a>
-        </span>
-        <span>
-            <a href="contact.html">Contact</a>
-        </span>
-    </nav> 
-    <div class="contact">
-    <h1>Contact Us</h1>
-    <div id="hide">
-    <h2>Let's Connect!</h2>
-        <p>We would love to hear from you! If you have any questions, suggestions, or just want to share your travel experiences, please don't hesitate to reach out to us. Our team at Travel Bag is dedicated to providing you with valuable and engaging content, and your feedback is essential in helping us improve and tailor our content to your interests. We want your feedback! </p>
+    <header class="bg-slate-100">
+        <nav class="mx-auto flex items-center justify-between px-6 py-10" aria-label="Global">
+            <a href="index.html" class="-m-1.5 p-1.5">
+            <span class="font-extrabold text-3xl text-slate-800">Travel Bag</span>
+          </a>
+          <div class="gap-x-12 text-slate-800 text-md sm:space-x-6 lg:flex">
+            <a href="southamerica.html" class="font-semibold leading-6">South America</a>
+            <a href="europe.html" class="font-semibold leading-6">Europe</a>
+            <a href="gear.html" class="font-semibold leading-6">Gear</a>
+            <a href="contact.html" class="font-semibold leading-6">Contact</a>
+          </div>
+        </nav>
+      </header>
 
-        <p>Feel free connect with us using the contact form below. Whether you're seeking destination recommendations, travel tips, or have inquiries about our articles, we're here to assist you. We value each and every interaction with our readers and strive to respond promptly to all inquiries. Your thoughts are important to us.</p>
-        
-        <p>If you prefer to connect through social media, you can find us on Instagram @travelbag. Follow us for daily travel inspiration, behind-the-scenes glimpses of our adventures, and updates. Don't forget to tag us in your travel photos using our official hashtag #travelbag for a chance to be featured on our social media platforms. We can't wait to see where you go!</p>
-        
-        <p>For potential collaborations, sponsored content, or advertising opportunities, please get in touch with our partnerships team by emailing travelbag@travelbag.com. We're open to exciting collaborations! Types of collaborations can include, but are not limited to: leading group trips, guest blog posts, and video submissions. Let's work something out together.</p>
-        
-        <p>Thank you for being a part of our travel community. We appreciate your support and look forward to connecting with you soon!</p>
-        
-        <p>Safe travels,</p>
 
-        <p>The Travel Bag Team</p>
+<!--
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ],
+  }
+  ```
+-->
+<div class="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+    
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl pb-6">Let's Connect</h2>
+      <p class="mt-2 text-lg leading-8 text-gray-600">Tips, tricks, suggestions? Send me a message!</p>
+    </div>
+    <form action="#" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
+      <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+        <div>
+          <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">First name</label>
+          <div class="mt-2.5">
+            <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-teal-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+        <div>
+          <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900">Last name</label>
+          <div class="mt-2.5">
+            <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-teal-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
         
-    <form class="contactform">
-        <input type="text" class="contact" id="name" placeholder="Name">
-        <input type="email" class="contact" id="email" placeholder="Email">
-        <input type="tel" class="contact" id="phone" placeholder="Phone Number">
-        <input type="text" class="contact" id="message" placeholder="What's on your mind?">
-        <button onclick="myHide(event)" id="hide" class="submit">Submit</button>
+        <div class="sm:col-span-2">
+          <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
+          <div class="mt-2.5">
+            <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-teal-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+        
+        <div class="sm:col-span-2">
+          <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
+          <div class="mt-2.5">
+            <textarea name="message" id="message" rows="4" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-teal-600 sm:text-sm sm:leading-6"></textarea>
+          </div>
+        </div>
+       
+      </div>
+      <div class="mt-10">
+        <button disabled class="block w-full rounded-md bg-teal-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-teal-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">Let's talk</button>
+      </div>
     </form>
-    </div>
-    <p id="nameOutput"></p>
-    </div>
-    <script src="js/scripts.js"></script>
+  </div>
+  
+
+
+      
+      <!-- footer -->
+    <footer class="bg-slate-800">
+        <div class="mx-auto max-w-7xl overflow-hidden px-6 py-16 sm:py-16 lg:px-8">
+          <div class="flex justify-center space-x-10">
+            <a href="#" class="text-gray-400 hover:text-gray-300">
+              <span class="sr-only">Facebook</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-gray-300">
+              <span class="sr-only">Instagram</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            
+          </div>
+          <p class="mt-10 text-center text-xs leading-5 text-gray-300">&copy; Travel Bag. All rights reserved.</p>
+        </div>
+      </footer>
 </body>
-<footer>
-    <span>travelbag@travelbag.com</span><span>123-456-7890</span><span>Travel Bag Inc.</span>
-</footer>
 </html>

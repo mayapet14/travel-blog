@@ -5,45 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gear</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
-    <nav>
-        <span>
-            <a href="index.html">Home</a>
-        </span>
-        <span>
-            <a href="southamerica.html">South America</a>
-        </span>
-        <span>
-            <a href="europe.html">Europe</a>
-        </span>
-        <span>
-            <a href="gear.html">Gear</a>
-        </span>
-        <span>
-            <a href="grouptrip.html">Group Trip</a>
-        </span>
-        <span>
-            <a href="contact.html">Contact</a>
-        </span>
-    </nav>
-    <div class="gear">
-        <h1>Top Picks for Travel Gear</h1>
-        <h2>Backpack</h2>
-            <img class="backpack" src="images/backpack.jpg" alt="backpack">
-            <h3>Osprey 40 Travel Pack</h3>
-            <p>The Osprey 40 Travel Pack comes in 2 colors: Night Jungle Blue and Zircon Red. Furthermore, it is specially tailored to the differences in mens' and womens' upper bodies, enabling the customer to pick the best fit. Most importantly, it has a capacity for 40lbs, which is the standard carryon limit in most countries. It is breathable, adjustable, and compes with a variety of zippers and compartments to organize your luggage. You can purchase this backpack at <a href="https://www.rei.com/product/207736/osprey-fairview-40-travel-pack-womens" target="_blank">REI</a>.</p>
-        <h2>Travel Insurance</h2>
-            <img class="backpack" src="images/health.jpg" alt="health">
-            <h3>Safety Wing</h3>
-            <p>Travel insurance a must, especially for those enagaging in adventure activities. Safety Wing covers flights, excursions, accomodations, and medical bills in case of an emergency. Unlike some insurers, the also cover pandemic/ COVID-19 related incidents. And most importantly, they are affordable, with great customer service. Purchase a plan at <a href="https://safetywing.com/" target="_blank">Safety Wing</a>.</p>
-        <h2>Clothes</h2>
-        <img class="backpack" src="images/clothes.jpg" alt="clothes">
-            <h3>Backpacker Style</h3>
-            <p>Wondering what to fit in your backpack as you travel the world? A good traveler packs light, in case of emergency souvenirs. It is important to wear clothes that you are comfortable in and versatility is a plus. Here is our comprehensive list of apparel, specifically for women:</p>
-            <ul>
+    <header class="bg-slate-100">
+        <nav class="mx-auto flex items-center justify-between px-6 py-10" aria-label="Global">
+            <a href="index.html" class="-m-1.5 p-1.5">
+            <span class="font-extrabold text-3xl text-slate-800">Travel Bag</span>
+          </a>
+          <div class="gap-x-12 text-slate-800 text-md sm:space-x-6 lg:flex">
+            <a href="southamerica.html" class="font-semibold leading-6">South America</a>
+            <a href="europe.html" class="font-semibold leading-6">Europe</a>
+            <a href="gear.html" class="font-semibold leading-6">Gear</a>
+            <a href="contact.html" class="font-semibold leading-6">Contact</a>
+          </div>
+        </nav>
+      </header>
+
+
+      <!-- image 1 -->
+      <div class="bg-white px-6 pt-32 lg:px-8">
+        <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
+          <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Top Picks for Travel Gear</h1>
+          <p class="mt-6 text-xl leading-8">I've included the best of the best. And better yet, I personally use all of this gear. If you have any recommendations, please send me a message via the contact page.</p>
+          <div class="mt-10 max-w-3xl">
+            
+            <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">Backpack - Osprey 40 Travel Pack</h2>
+            <p class="mt-6">The Osprey 40 Travel Pack comes in 2 colors: Night Jungle Blue and Zircon Red. Furthermore, it is specially tailored to the differences in mens' and womens' upper bodies, enabling the customer to pick the best fit. Most importantly, it has a capacity for 40lbs, which is the standard carryon limit in most countries. It is breathable, adjustable, and compes with a variety of zippers and compartments to organize your luggage. You can purchase this backpack at REI.</p>
+          </div>
+          <figure class="mt-16">
+            <img class="aspect-video rounded-xl bg-gray-50 object-cover overflow-hidden" src="images/travelbag.jpg" alt="">
+            <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500 font-bold hover:text-gray-900">
+              <a href="https://www.rei.com/product/207736/osprey-fairview-40-travel-pack-womens" target="_blank"> Click here to purchase at REI</a>            </figcaption>
+          </figure>
+         
+        </div>
+      </div>
+      
+      <!-- image 2 -->
+      <div class="bg-white px-6 py-16 lg:px-8">
+        <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
+          <div class="mt-10 max-w-3xl">   
+            <h2 class="mt-6 text-2xl font-bold tracking-tight text-gray-900">Travel Insurance - Safety Wing</h2>
+            <p class="mt-6">The Osprey 40 Travel Pack comes in 2 colors: Night Jungle Blue and Zircon Red. Furthermore, it is specially tailored to the differences in mens' and womens' upper bodies, enabling the customer to pick the best fit. Most importantly, it has a capacity for 40lbs, which is the standard carryon limit in most countries. It is breathable, adjustable, and compes with a variety of zippers and compartments to organize your luggage. You can purchase this backpack at REI.</p>
+          </div>
+          <figure class="mt-16">
+            <img class="aspect-video rounded-xl bg-gray-50 object-cover overflow-hidden" src="images/insurance.png" alt="">
+            <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500 font-bold hover:text-gray-900">
+              <a href="https://safetywing.com/" target="_blank">Clkck here to purchase at Safety Wing</a>           </figcaption>
+          </figure>
+         
+        </div>
+      </div>
+
+      <!-- img 3 -->
+      <div class="bg-white px-6 pt-8 pb-32 lg:px-8">
+        <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
+          <div class="mt-10 max-w-3xl">   
+            <h2 class="mt-6 text-2xl font-bold tracking-tight text-gray-900">Clothes</h2>
+            <p class="mt-6">Wondering what to fit in your backpack as you travel the world? A good traveler packs light, in case of emergency souvenirs. It is important to wear clothes that you are comfortable in and versatility is a plus. Here is our comprehensive list of apparel, specifically for women:</p>
+            <ul class="mt-4">
                 <li>2 T-Shirts- For casual and sleep</li>
                 <li>1 "Going Out" Shirt- Think crop top or fancy blouse</li>
                 <li>1 "Cover Up" Shirt- Such as silk button-up or cardigan</li>
@@ -54,29 +78,36 @@
                 <li>Gym Shoes/ Hiking Boots- One or the other</li>
                 <li>Undergarments/ Socks- Just be smart. A bar of soap and a sink is a great washer.</li>
             </ul>
-    </div>
-    <div class="checkbox">
-        <h2>Do you have your gear?</h2>
-        <ul>
-            <li><input type="checkbox" id="item1"><label for="item1">T-Shirts</label></li>
-            <li><input type="checkbox" id="item2"><label for="item2">Going Out Shirt</label></li>
-            <li><input type="checkbox" id="item3"><label for="item3">Cover Up Shirt</label></li>
-            <li><input type="checkbox" id="item4"><label for="item4">Sweater</label></li>
-            <li><input type="checkbox" id="item5"><label for="item5">Skirt and Shorts</label></li>
-            <li><input type="checkbox" id="item6"><label for="item6">Pants</label></li>
-            <li><input type="checkbox" id="item7"><label for="item7">Shower Shoes</label></li>
-            <li><input type="checkbox" id="item8"><label for="item8">Gym Shoes/ Hiking Boots</label></li>
-            <li><input type="checkbox" id="item9"><label for="item8">Undergarments/ Socks</label></li>
-        </ul>
-            <button onclick="myCheck()" class="submit">I'm all packed</button>
-            <p id="checked"></p>
-            <p id="letsGo"></p>
+          </div>
+          <figure class="mt-16">
+            <img class="aspect-video rounded-xl bg-gray-50 object-cover overflow-hidden" src="images/clothes.jpg" alt="">
+            
+          </figure>
+         
+        </div>
+      </div>
 
-    </div>
-    <footer>
-        <span>travelbag@travelbag.com</span><span>123-456-7890</span><span>Travel Bag Inc.</span>
-    </footer>
-
-    <script src="js/scripts.js"></script>
+      
+      <!-- footer -->
+    <footer class="bg-slate-800">
+        <div class="mx-auto max-w-7xl overflow-hidden px-6 py-16 sm:py-16 lg:px-8">
+          <div class="flex justify-center space-x-10">
+            <a href="#" class="text-gray-400 hover:text-gray-300">
+              <span class="sr-only">Facebook</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-gray-300">
+              <span class="sr-only">Instagram</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            
+          </div>
+          <p class="mt-10 text-center text-xs leading-5 text-gray-300">&copy; Travel Bag. All rights reserved.</p>
+        </div>
+      </footer>
 </body>
 </html>
